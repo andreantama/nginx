@@ -105,6 +105,25 @@ http {
 }
 ```
 
+# Varibles
+```bash
+$http, $url, $args
+$host\n$uri\n$args
+$arg_name
+
+if($arg_apikey != 1234) {
+  return 401 "Incorrect Api Key";
+}
+
+set $weekend "No";
+
+# Check if weekend
+
+if($date_local ~ 'Saturday|Sunday') {
+  set $weekend "Yes";
+}
+```
+
 
 
 
