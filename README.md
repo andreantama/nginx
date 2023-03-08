@@ -124,6 +124,22 @@ if($date_local ~ 'Saturday|Sunday') {
 }
 ```
 
+# Rewrites Redirect
+```bash
+rewrite ^/user/(\w+) /greet/$1
+
+location /greet {
+  return 200 "Hello User";
+}
+```
+
+```bash
+return 200 "Hello World"
+
+return 307 /asas/asasa
+```
+
+# Try Files
 
 
 
